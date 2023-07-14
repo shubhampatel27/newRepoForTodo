@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 export const connectionDB = async ()=>{
     try {
         
-   await mongoose.connect("mongodb+srv://newTodo:newTodo@cluster0.lkik6xn.mongodb.net/?retryWrites=true&w=majority")
+   await mongoose.connect(process.env.MONGO_URL)
    console.log("hiii connected to the db")
     } catch (error) {
         console.log(error);

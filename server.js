@@ -5,5 +5,5 @@ connectionDB();
 
 
 app.listen(3000,()=>{
-    console.log("i am running")
+    console.log(`listening to ${process.env.PORT}`)
 })
